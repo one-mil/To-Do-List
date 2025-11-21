@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bckgrndTD.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#toDo{
+   background-color: rgb(245, 249, 249);
+   padding: 20px;
+   border-radius: 10px;
+   width: 500px;
+   height: 500px;
+   
+}
+
+
+
+#inputBox{
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+border-radius: 10px;
+font-size: 16px;
+margin-bottom: 10px;
+/* outline: none; */
+/* transition: 0.2s ease */
+
+}
+#addTaskbtn{
+width: 100%;
+padding: 12px;
+background-color: rgb(126, 126, 127);
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+
+} 
+#addTaskbtn:hover{
+    color: rgba(239, 238, 238, 0.685);
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+h2 img{width: 40px;
+height: 40px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: rgb(104, 103, 103);
+}

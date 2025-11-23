@@ -15,8 +15,8 @@ function updateCounts() {
 }
 
 // Add task
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
     let taskText = inputBox.value.trim();
     if (taskText === "") return;
@@ -30,9 +30,11 @@ form.addEventListener("submit", (e) => {
         updateCounts();
     });
 
+    //Everything here is not my part but I had to do it 
+    // to see if my code worked properly
     // Right-click to delete
-    li.addEventListener("contextmenu", (e) => {
-        e.preventDefault(); // stop default menu
+    li.addEventListener("contextmenu", (event) => {
+        event.preventDefault(); // stop default menu
         li.remove();
         updateCounts();
     });

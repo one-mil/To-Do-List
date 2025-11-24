@@ -35,6 +35,11 @@ margin-bottom: 10px;
 /* transition: 0.2s ease */
 
 }
+
+#inputBox::placeholder {
+    font-style: italic;
+}
+
 #addTaskbtn{
 width: 100%;
 padding: 12px;

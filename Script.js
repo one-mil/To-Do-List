@@ -51,3 +51,21 @@ tasks.addEventListener("change", (event)=> { const clickedTask = event.target;
     
 
 })
+
+tasks.addEventListener("click", (event) => {
+    const clickedTask = event.target;
+    if (clickedTask.classList.contains("deleteBtn")){
+    const li = clickedTask.parentElement;
+    li.remove();
+    updateCounts();
+    }
+})
+
+const updateCounts = () => {
+    const allTasks = tasks.querySelectorAll("li");
+
+const completedTasks = tasks.querySelectorAll("li.completed");
+
+total.textContent = allTasks.length;
+completed.textContent = completedTasks.length;
+}

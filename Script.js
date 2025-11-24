@@ -40,3 +40,14 @@ span.textContent = userInput;
     updateCounts();
 })
 
+tasks.addEventListener("change", (event)=> { const clickedTask = event.target;
+
+    if(clickedTask.classList.contains("task-checkbox")){
+        const li = clickedTask.parentElement;
+        li.classList.toggle("completed");
+        updateCounts();
+        
+    }
+    
+
+})

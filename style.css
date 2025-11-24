@@ -49,6 +49,8 @@ cursor: pointer;
 } 
 #addTaskbtn:hover{
     color: rgba(239, 238, 238, 0.685);
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-weight: 700;
 }
 
 h2{
